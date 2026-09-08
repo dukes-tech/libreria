@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })
-export class Hero {}
+export class Hero {
+
+  @Input() titulo!:string;
+  @Input() contenido!:string;
+  @Input() imagen!:string;
+}

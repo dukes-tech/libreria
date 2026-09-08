@@ -5,7 +5,7 @@ import { Hero } from '../../shared/hero/hero';
 import { Specialties } from '../../shared/specialties/specialties';
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, RouterModule, Hero, Specialties], 
+  imports: [CommonModule, RouterModule, Hero, Specialties,Hero], 
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
